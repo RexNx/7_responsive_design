@@ -30,6 +30,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -428,6 +429,8 @@ main {
 
 }
 
+/*Img Section*/
+
 .bitcoin-img-container{
     width: 100%;
     min-width: 320px;
@@ -446,6 +449,97 @@ main {
     color: var(--white);
     text-align: center;
 }
+
+/*Plans section*/
+
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.main-plans-text--container{
+
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+    
+
+}
+
+.main-plans-text--container h2{
+
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+    
+    
+}
+
+.main-plans-text--container p{
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 30px;
+    color: #757575 ;
+}
+
+
+
+.plans-detail--card{
+    position: relative;
+
+    width: 50%;
+    min-width: 180px;
+    max-width: 220px;
+    min-height: 240px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: var(--off-white);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+
+}
+
+.plans-detail--recommended{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    top: -15px;
+    left: calc(50% - 50px);
+}
+
+.plans-detail--recommended p{
+    font-size: 1.2rem;
+    font-family: "Inter",sans-serif;
+    font-weight: bold;
+    color: var(--white);
+    line-height: 1.5rem;
+}
+
+.plans-detail--card .plans--payment{
+
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    margin-bottom: 8px;
+
+}
+
 
 
 

@@ -461,7 +461,7 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     margin: 0 15px;
-    gap: 10px;
+    gap: 5px;
 }
 
 .main-plans-container{
@@ -509,7 +509,7 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     min-height: 250px;
     
@@ -600,3 +600,36 @@ main {
 
 
 
+/*Footer*/
+
+footer{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--bitcoin-orange);
+    height: 150px;
+}
+
+
+footer section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li{
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--white);
+}

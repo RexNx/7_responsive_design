@@ -168,7 +168,22 @@ main {
 
 /*Table*/
 
+
+.main-tables-container{
+
+    display: flex;
+    height: 400px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 50PX;
+    gap: 50px;
+
+}
+
 .main-currency-table, .main-commissions-table{
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;

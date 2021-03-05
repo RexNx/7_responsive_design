@@ -452,6 +452,18 @@ main {
 
 /*Plans section*/
 
+
+.plans-cards--container{
+    display: flex;
+    height: 316px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 15px;
+    gap: 10px;
+}
+
 .main-plans-container{
     width: 100%;
     min-width: 320px;
@@ -495,14 +507,14 @@ main {
 
 .plans-detail--card{
     position: relative;
-
-    width: 50%;
-    min-width: 180px;
-    max-width: 220px;
-    min-height: 240px;
-    text-align: center;
-    margin: 20px auto;
-    padding: 15px;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    min-height: 250px;
+    
+    margin: 50px auto;
+    padding: 0 15px;
     background-color: var(--off-white);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
@@ -521,7 +533,7 @@ main {
     left: calc(50% - 50px);
 }
 
-.plans-detail--recommended p{
+.plans-detail--recommended .recommended{
     font-size: 1.2rem;
     font-family: "Inter",sans-serif;
     font-weight: bold;
@@ -536,12 +548,55 @@ main {
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--warm-black);
-    margin-bottom: 8px;
+    
 
 }
 
+.plans-price--card-price{
+
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    
+    color: var(--warm-black);
+}
+
+.plans-price--card-price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
 
 
+.product--small-letter{
+    font-size: 1.2rem;
+    color: #757575;
+} 
+.product--card-button{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: solid;
+    border-radius: 4px;
+    border-color: var(--bitcoin-orange);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+
+}
+
+.product--card-button span{
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-image: url(/assets/icons/orange-right-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
 
 
 
